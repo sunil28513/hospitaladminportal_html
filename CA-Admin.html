@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>CA Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <link href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+</head>
+
+    <body data-sidebar="dark">
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+            <header id="page-topbar">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box">
+                            <a href="#" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-light-small.png" alt="">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/images/logo-light.png" alt="">
+                                </span>
+                            </a>
+                        </div>
+
+                        <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn">
+                            <i class="fa fa-fw fa-bars"></i>
+                        </button> 
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
+                                    alt="Header Avatar">
+                                <span class="d-none d-xl-inline-block ml-1">John Doe</span>
+                                <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <!-- item-->
+                                <a class="dropdown-item" href="#"><i class="bx bx-user font-size-16 align-middle mr-1"></i> Profile</a>
+                                <a class="dropdown-item" href="#"><i class="bx bx-wallet font-size-16 align-middle mr-1"></i> My Wallet</a>
+                                <a class="dropdown-item d-block" href="#"><span class="badge badge-success float-right">11</span><i class="bx bx-wrench font-size-16 align-middle mr-1"></i> Settings</a>
+                                <a class="dropdown-item" href="#"><i class="bx bx-lock-open font-size-16 align-middle mr-1"></i> Lock screen</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-danger" href="login.html"><i class="bx bx-power-off font-size-16 align-middle mr-1 text-danger"></i> Logout</a>
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+            </header> <!-- ========== Left Sidebar Start ========== -->
+            <div class="vertical-menu">
+                <div data-simplebar class="h-100">
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu list-unstyled" id="side-menu">
+                            <li class="menu-title">Menu</li>
+                            <li>
+                                <a href="#" class="waves-effect">
+                                    <i class="bx bx-home-circle"></i> 
+                                    <span>Clinics</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="bx bx-store"></i>
+                                    <span>Appts</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="#">Todays Appts</a></li>
+                                    <li><a href="appointment-list.html">Find Appts</a></li>
+                                    <li><a href="#">Appt Request</a></li>
+                                    <li><a href="#">Photo Referrals</a></li>
+                                    <li><a href="#">My Appts Today</a></li>
+                                    <li><a href="#">My Appts Tomm</a></li>
+                                    <li><a href="#">My Appts/Week</a></li>
+                                    <li><a href="add-patient.html">Add Patient</a></li>
+                                    <li><a href="#">Add Appt</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class=" waves-effect">
+                                    <i class="bx bx-calendar"></i>
+                                    <span>Patients/GP</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="bx bx-envelope"></i>
+                                    <span>Records</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="bx bx-receipt"></i>
+                                    <span>Letters</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="bx bx-briefcase-alt-2"></i>
+                                    <span>Auto text</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="bx bx-task"></i>
+                                    <span>Form Acion</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="bx bxs-user-detail"></i>
+                                    <span>Reports</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="bx bx-user-circle"></i>
+                                    <span>Custom Lists</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="bx bx-user-circle"></i>
+                                    <span>My Details</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="bx bx-file"></i>
+                                    <span>Leave Details</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="bx bx-user"></i>
+                                    <span>Admin</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="true">
+                                    <li><a href="#">Users</a></li>
+                                    <li><a href="#">User Groups</a></li>
+                                    <li><a href="#">Functions</a></li>
+                                    <li><a href="#">Fun Group</a></li>
+                                    <li><a href="#">Library</a></li>
+                                    <li class="active"><a href="CA-Admin.html">CA Admin</a></li>
+                                    <li><a href="#">Browser Admin</a></li>
+                                    <li><a href="#">Sent Message</a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <!-- Sidebar -->
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+                <div class="page-content">
+                    <div class="container-fluid">
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box d-flex align-items-center justify-content-between">
+                                    <h4 class="mb-0 font-size-18"> CA Admin Functionality</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- end page title -->
+                        <div class="card" style="background: url(./assets/images/background_color.jpg); background-size: cover;">
+                            <div class="card-body">
+                                <h4 class="card-title mb-4">Functionality</h4>
+                                 <div class="row">
+                                     <div class="col-md-6">
+                                        <div class="funnalitylist">
+                                            <ul>
+                                                <li>Allergens</li>
+                                                <li>Battery</li>
+                                                <li>Units</li>
+                                                <li>Vehicles</li>
+                                                <li>Relavance</li>
+                                                <li>Scoring Mechanism</li>
+                                                <li>Allergens</li>
+                                                <li>Upload Information sheets</li>
+                                                <li>Commercial Products</li>
+                                                <li>Supplies</li>
+                                                <li>Diagnosis</li>
+                                                <li>Useful sites</li>
+                                            </ul>
+                                        </div>
+                                     </div>
+                                     <div class="col-md-6">
+                                        <div class="funnalitylist">
+                                            <ul>
+                                                <li>Test Allergens</li>
+                                                <li>Chemical and Functional groups </li>
+                                                <li>Reactions</li>
+                                                <li>Certainity</li>
+                                                <li>Interpretations</li>
+                                                <li>Scoring Features</li>
+                                                <li>Manufactures</li>
+                                                <li>Set Default Batties</li>
+                                                <li>Common test allergence</li>
+                                                <li>Library</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="reqdiv">
+                                            <div class="left">
+                                                <h4>Request form</h4>
+                                                <p>Non Stack Requisite form - CA Unit</p>
+                                            </div>
+                                            <div class="right">
+                                                <p>Pharmacy request sheet for Patch test - CA Unit</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                                 
+                                 
+                                <!-- end table-responsive -->
+                            </div>
+                        </div>
+                        <!-- end row -->
+                                                <!-- end page title -->
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h4 class="card-title mb-4">Create Allergen</h4>  
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label> Allergen type : <span class="text-danger">*</span></label>
+                                                                    <select class="form-control">
+                                                                        <option value="1">Substance</option>
+                                                                        <option value="2">Mix</option>
+                                                                        <option value="3">Product</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label> Preferred Name : <span class="text-danger">*</span></label>
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                               
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label> Inci Name</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label> Synonym(s) : <span class="text-danger">*</span></label>
+                                                                    <input type="text" class="form-control">
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label> Uses</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div> 
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label> Sources</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div> 
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label> Comments</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div> 
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label> Chemical/Functional Group</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div> 
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label> Product Category</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div> 
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label> Recom Conn. and vehicles</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div> 
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label> Abbreviation</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div> 
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label> Germen Name</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div> 
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label> CAS No.</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div> 
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label> Cross Reaction</label>
+                                                                    <input type="text" class="form-control">
+                                                                </div> 
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label> Contact unit </label>
+                                                                    <select class="form-control">
+                                                                        <option value="1">Yes</option>
+                                                                        <option value="2" selected>No</option>
+                                                                    </select>
+                                                                </div> 
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label> Photosperaty</label>
+                                                                    <select class="form-control">
+                                                                        <option value="1">Yes</option>
+                                                                        <option value="2" selected>No</option>
+                                                                    </select>
+                                                                </div> 
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label> Patch Test Sensitation</label>
+                                                                    <select class="form-control">
+                                                                        <option value="1">Yes</option>
+                                                                        <option value="2" selected>No</option>
+                                                                    </select>
+                                                                </div> 
+                                                            </div>
+                                                            <div class="col-md-12">
+                                                                <div class="form-group text-center">
+                                                                    <input type="button" class="btn btn-danger" value="Submit">
+                                                                </div> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end row -->
+
+                    </div>
+                    <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <script>document.write(new Date().getFullYear())</script> © Amersoft.
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+
+
+        <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+        <script src="assets/js/pages/form-advanced.init.js"></script>
+
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Appointment List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+</head>
+
+    <body data-sidebar="dark">
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+            <header id="page-topbar">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box">
+                            <a href="#" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-light-small.png" alt="">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/images/logo-light.png" alt="">
+                                </span>
+                            </a>
+                        </div>
+
+                        <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn">
+                            <i class="fa fa-fw fa-bars"></i>
+                        </button> 
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
+                                    alt="Header Avatar">
+                                <span class="d-none d-xl-inline-block ml-1">John doe</span>
+                                <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <!-- item-->
+                                <a class="dropdown-item" href="#"><i class="bx bx-user font-size-16 align-middle mr-1"></i> Profile</a>
+                                <a class="dropdown-item" href="#"><i class="bx bx-wallet font-size-16 align-middle mr-1"></i> My Wallet</a>
+                                <a class="dropdown-item d-block" href="#"><span class="badge badge-success float-right">11</span><i class="bx bx-wrench font-size-16 align-middle mr-1"></i> Settings</a>
+                                <a class="dropdown-item" href="#"><i class="bx bx-lock-open font-size-16 align-middle mr-1"></i> Lock screen</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-danger" href="login.html"><i class="bx bx-power-off font-size-16 align-middle mr-1 text-danger"></i> Logout</a>
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+            </header> <!-- ========== Left Sidebar Start ========== -->
+            <div class="vertical-menu">
+                <div data-simplebar class="h-100">
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu list-unstyled" id="side-menu">
+                            <li class="menu-title">Menu</li>
+                            <li>
+                                <a href="#" class="waves-effect">
+                                    <i class="bx bx-home-circle"></i> 
+                                    <span>Clinics</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="bx bx-store"></i>
+                                    <span>Appts</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="#">Todays Appts</a></li>
+                                    <li><a href="appointment-list.html">Find Appts</a></li>
+                                    <li><a href="#">Appt Request</a></li>
+                                    <li><a href="#">Photo Referrals</a></li>
+                                    <li><a href="#">My Appts Today</a></li>
+                                    <li><a href="#">My Appts Tomm</a></li>
+                                    <li><a href="#">My Appts/Week</a></li>
+                                    <li><a href="add-patient.html">Add Patient</a></li>
+                                    <li><a href="#">Add Appt</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class=" waves-effect">
+                                    <i class="bx bx-calendar"></i>
+                                    <span>Patients/GP</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="bx bx-envelope"></i>
+                                    <span>Records</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="bx bx-receipt"></i>
+                                    <span>Letters</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="bx bx-briefcase-alt-2"></i>
+                                    <span>Auto text</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="bx bx-task"></i>
+                                    <span>Form Acion</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="bx bxs-user-detail"></i>
+                                    <span>Reports</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="bx bx-user-circle"></i>
+                                    <span>Custom Lists</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="bx bx-user-circle"></i>
+                                    <span>My Details</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="waves-effect">
+                                    <i class="bx bx-file"></i>
+                                    <span>Leave Details</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow waves-effect">
+                                    <i class="bx bx-user"></i>
+                                    <span>Admin</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="true">
+                                    <li><a href="#">Users</a></li>
+                                    <li><a href="#">User Groups</a></li>
+                                    <li><a href="#">Functions</a></li>
+                                    <li><a href="#">Fun Group</a></li>
+                                    <li><a href="#">Library</a></li>
+                                    <li><a href="CA-Admin.html">CA Admin</a></li>
+                                    <li><a href="#">Browser Admin</a></li>
+                                    <li><a href="#">Sent Message</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Sidebar -->
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+                <div class="page-content">
+                    <div class="container-fluid">
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box d-flex align-items-center justify-content-between">
+                                    <h4 class="mb-0 font-size-18">Appointment List</h4>
+                                    <!-- <h4 class="card-title mb-4">Appointment List</h4> -->
+                                    <div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item active">Welcome to Amersoft</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end page title -->
+                     <div class="card appointmentlist">
+                       <div class="card-body">
+                           <div class="row">
+                              <div class="col-sm-2"> 
+                                <label>Patient Name </label>
+                                <p>Sunil kumar yadav</p>
+                                <label>Clinic Date | Time</label>
+                                <p>22/12/2020 | 06:00 pm</p>
+                              </div>
+
+                              <div class="col-sm-1 p-sm-0"> 
+                                <label>DOB</label>
+                                <p>01/01/1995</p>
+                              </div>
+                              <div class="col-sm-1 p-sm-0"> 
+                                <label>MRN NHSN </label>
+                                <p> 123456 </p>
+                              </div>
+
+                              <div class="col-sm-1"> 
+                                <label>Type</label>
+                                <p>NHS</p>
+                              </div>
+                              <div class="col-sm-2"> 
+                                <label>Clinic(Clinic Code)</label>
+                                <p>Patch Test NHS</p>
+                              </div>
+                              <div class="col-sm-1 p-sm-0"> 
+                                <label>PC Seen By</label>
+                                <p>Ortan, David</p>
+                              </div>
+                              <div class="col-md-4">
+                                  <div class="row">
+                                     <div class="col-sm-2">
+                                        <label>N/O</label>
+                                        <p></p>
+                                     </div>
+                                     <div class="col-sm-2">
+                                      <label>Ref</label>
+                                      <p></p>
+                                   </div>
+                                   <div class="col-sm-2">
+                                    <label>Visit</label>
+                                    <p></p>
+                                 </div>
+                                  <div class="col-sm-2">
+                                     <label>F/U</label>
+                                     <p></p>
+                                  </div>
+                                  <div class="col-sm-2">
+                                    <label>HRG</label>
+                                    <p></p>
+                                 </div>
+                                 <div class="col-sm-2">
+                                  <label>Letter</label>
+                                  <p></p>
+                               </div>
+                                  </div>
+                              </div>
+                              <div class="readmore">
+                                <div class="dropdown dropleft">
+                                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class='bx bx-dots-vertical-rounded'></i></a>
+                                    <div class="dropdown-menu">
+
+                                      <a class="dropdown-item edit" href="#">Edit <i class='bx bx-edit-alt'></i></a>
+                                      <a class="dropdown-item delete" href="#">Delete <i class='bx bxs-trash'></i></a>
+                                      
+                                    </div>
+                                </div>
+                              </div>
+                             </div>
+                          </div>
+                      </div>
+
+                      <div class="card appointmentlist">
+                        <div class="card-body">
+                            <div class="row">
+                               <div class="col-sm-2"> 
+                                 <label>Patient Name </label>
+                                 <p>Sunil kumar yadav</p>
+                                 <label>Clinic Date | Time</label>
+                                 <p>22/12/2020 | 06:00 pm</p>
+                               </div>
+ 
+                               <div class="col-sm-1 p-sm-0"> 
+                                 <label>DOB</label>
+                                 <p>01/01/1995</p>
+                               </div>
+                               <div class="col-sm-1 p-sm-0"> 
+                                 <label>MRN NHSN </label>
+                                 <p> 123456 </p>
+                               </div>
+ 
+                               <div class="col-sm-1"> 
+                                 <label>Type</label>
+                                 <p>NHS</p>
+                               </div>
+                               <div class="col-sm-2"> 
+                                 <label>Clinic(Clinic Code)</label>
+                                 <p>Patch Test NHS</p>
+                               </div>
+                               <div class="col-sm-1 p-sm-0"> 
+                                 <label>PC Seen By</label>
+                                 <p>Ortan, David</p>
+                               </div>
+                               <div class="col-md-4">
+                                   <div class="row">
+                                      <div class="col-sm-2">
+                                         <label>N/O</label>
+                                         <p></p>
+                                      </div>
+                                      <div class="col-sm-2">
+                                       <label>Ref</label>
+                                       <p></p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                     <label>Visit</label>
+                                     <p></p>
+                                  </div>
+                                   <div class="col-sm-2">
+                                      <label>F/U</label>
+                                      <p></p>
+                                   </div>
+                                   <div class="col-sm-2">
+                                     <label>HRG</label>
+                                     <p></p>
+                                  </div>
+                                  <div class="col-sm-2">
+                                   <label>Letter</label>
+                                   <p></p>
+                                </div>
+                                   </div>
+                               </div>
+                               <div class="readmore">
+                                 <div class="dropdown dropleft">
+                                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class='bx bx-dots-vertical-rounded'></i></a>
+                                     <div class="dropdown-menu">
+ 
+                                       <a class="dropdown-item edit" href="#">Edit <i class='bx bx-edit-alt'></i></a>
+                                       <a class="dropdown-item delete" href="#">Delete <i class='bx bxs-trash'></i></a>
+                                       
+                                     </div>
+                                 </div>
+                               </div>
+                              </div>
+                           </div>
+                       </div>
+                       
+                       <div class="card appointmentlist">
+                        <div class="card-body">
+                            <div class="row">
+                               <div class="col-sm-2"> 
+                                 <label>Patient Name </label>
+                                 <p>Sunil kumar yadav</p>
+                                 <label>Clinic Date | Time</label>
+                                 <p>22/12/2020 | 06:00 pm</p>
+                               </div>
+ 
+                               <div class="col-sm-1 p-sm-0"> 
+                                 <label>DOB</label>
+                                 <p>01/01/1995</p>
+                               </div>
+                               <div class="col-sm-1 p-sm-0"> 
+                                 <label>MRN NHSN </label>
+                                 <p> 123456 </p>
+                               </div>
+ 
+                               <div class="col-sm-1"> 
+                                 <label>Type</label>
+                                 <p>NHS</p>
+                               </div>
+                               <div class="col-sm-2"> 
+                                 <label>Clinic(Clinic Code)</label>
+                                 <p>Patch Test NHS</p>
+                               </div>
+                               <div class="col-sm-1 p-sm-0"> 
+                                 <label>PC Seen By</label>
+                                 <p>Ortan, David</p>
+                               </div>
+                               <div class="col-md-4">
+                                   <div class="row">
+                                      <div class="col-sm-2">
+                                         <label>N/O</label>
+                                         <p></p>
+                                      </div>
+                                      <div class="col-sm-2">
+                                       <label>Ref</label>
+                                       <p></p>
+                                    </div>
+                                    <div class="col-sm-2">
+                                     <label>Visit</label>
+                                     <p></p>
+                                  </div>
+                                   <div class="col-sm-2">
+                                      <label>F/U</label>
+                                      <p></p>
+                                   </div>
+                                   <div class="col-sm-2">
+                                     <label>HRG</label>
+                                     <p></p>
+                                  </div>
+                                  <div class="col-sm-2">
+                                   <label>Letter</label>
+                                   <p></p>
+                                </div>
+                                   </div>
+                               </div>
+                               <div class="readmore">
+                                 <div class="dropdown dropleft">
+                                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class='bx bx-dots-vertical-rounded'></i></a>
+                                     <div class="dropdown-menu">
+ 
+                                       <a class="dropdown-item edit" href="#">Edit <i class='bx bx-edit-alt'></i></a>
+                                       <a class="dropdown-item delete" href="#">Delete <i class='bx bxs-trash'></i></a>
+                                       
+                                     </div>
+                                 </div>
+                               </div>
+                              </div>
+                           </div>
+                       </div>
+ 
+                      
+
+                        <h5 class="mt-4 text-right">Total No. of Records : 6</h5>
+                        <!-- end table-responsive -->
+                        <div class="appointmentbtn">
+                            <div class="button-items mt-4 text-center">
+                                <button type="button" class="btn btn-danger waves-effect waves-light">Print List</button>
+                                <button type="button" class="btn btn-secondary waves-effect waves-light">Refresh</button>
+                            </div>
+                        </div>
+
+                        <!-- end row -->
+                    </div>
+                    <!-- container-fluid -->
+                </div>
+                <!-- End Page-content -->
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <script>document.write(new Date().getFullYear())</script> © Amersoft.
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/jquery/jquery.min.js"></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+        <script src="assets/libs/simplebar/simplebar.min.js"></script>
+        <script src="assets/libs/node-waves/waves.min.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
